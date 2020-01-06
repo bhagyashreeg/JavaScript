@@ -10,5 +10,5 @@ var posts = [
       return post.id === comment.postId;
     });
   }
-  postForComment(posts,comment)
+  console.log(postForComment(posts,comment));
   

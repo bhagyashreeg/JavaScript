@@ -17,8 +17,8 @@ var computers = [
   }
   "---------------------"
   
-  allComputersCanRun;
-  onlySomeComputersCanRun;
+  console.log(allComputersCanRun);
+  console.log(onlySomeComputersCanRun);
   
   "++++++++++++"
   computers.every(function(computer){

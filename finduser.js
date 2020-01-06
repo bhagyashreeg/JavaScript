@@ -12,10 +12,10 @@ var users = [
     }
   }
     
-  user;
+  //console.log(user);
   
   users.find(function(user){
     return user.name === 'Prajwal';
   });
   
-  
+  console.log(user);

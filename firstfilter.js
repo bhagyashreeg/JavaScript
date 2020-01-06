@@ -16,4 +16,4 @@ var products = [
     return product.type === 'vegetable';
   });
                   
-  filteredProducts;
+  console.log(filteredProducts);
