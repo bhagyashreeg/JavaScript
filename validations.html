@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Employee record</title>
+    <script>
+        function Employee(){
+            var Firstname=document.forms["myForm"]["firstname"];
+            //var Lastname=document.forms["myForm"]["lastname"];
+            //var Companyname=document.forms["myForm"]["cmpnyname"];
+            //var Phoneno=document.forms["myForm"]["phno"];
+            //var Email=document.forms["myForm"]["email"];
+            //var Address=document.forms["myForm"]["address"];
+
+            if(Firstname.value == ""){
+                window.alert("Please Enter your firstname");
+                Firstname.focus();
+                return false;
+            }
+            else if(isNaN(Firstname.value) )/*"%d[10]"*/
+            {
+                alert("name confirmed");
+            }
+            else{ 
+                window.alert("please enter character"); 
+            }   
+
+
+            
+            /*if(Lastname.value == ""){
+                window.alert("Please Enter your lastname");
+                Lastname.focus();
+                return false;
+            }
+            if(Companyname.value == ""){
+                window.alert("Please Enter your company name");
+                Companyname.focus();
+                return false;
+            }
+            if(Phoneno.value == ""){
+                window.alert("Please Enter your phoneno");
+                Phoneno.focus();
+                return false;
+            }   
+            if(Email.value == ""){
+                window.alert("Please Enter your name");
+                Email.focus();
+                return false;
+            }
+            if(Address.value == ""){
+                window.alert("Please Enter your name");
+                Address.focus();
+                return false;
+            }
+*/
+
+        }
+        return true;
+    </script>
+<p id="demo"></p>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return Employee()" method="POST">
+        <table border="2">
+            <tr>
+                <td>Firstname:</td>
+                <td><input type="text" name="firstname" id="firstname" ></td>
+            </tr><br>
+            <tr>
+                <td><input type="submit" name="submit" value="submit" onclick="add()"></td>
+                <td><input type="reset" name="reset" value="reset"></td>
+            </tr>
+
+            
+        </table>
+    </form>
+</body>
+</html>
